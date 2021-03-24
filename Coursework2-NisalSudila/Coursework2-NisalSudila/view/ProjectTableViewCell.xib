@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectCell" id="KGk-i7-Jjw" customClass="ProjectTableViewCell" customModule="project_planner_ipad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGn-Yt-m3H">
+                        <rect key="frame" x="7" y="5" width="406" height="88"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-flag-green" translatesAutoresizingMaskIntoConstraints="NO" id="r8I-nD-pME">
+                                <rect key="frame" x="13" y="8" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="b4D-XI-02f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0E-P7-eA0">
+                                <rect key="frame" x="55" y="8" width="313" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-clock" translatesAutoresizingMaskIntoConstraints="NO" id="yB1-CN-TfJ">
+                                <rect key="frame" x="13" y="40" width="29" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="MUA-ta-00C"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbr-62-9a7">
+                                <rect key="frame" x="55" y="40" width="345" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Via-ed-GSJ">
+                                <rect key="frame" x="378" y="9" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="IvX-gh-TkZ"/>
+                                    <constraint firstAttribute="height" constant="22" id="QrX-iF-P66"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="handleViewNotesClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5IV-8p-fEM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-hH-sHz">
+                                <rect key="frame" x="13" y="63" width="387" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h0E-P7-eA0" firstAttribute="centerY" secondItem="Via-ed-GSJ" secondAttribute="centerY" id="5uN-qJ-dFC"/>
+                            <constraint firstItem="r8I-nD-pME" firstAttribute="trailing" secondItem="yB1-CN-TfJ" secondAttribute="trailing" id="78a-kT-vXk"/>
+                            <constraint firstItem="yB1-CN-TfJ" firstAttribute="top" secondItem="Jbr-62-9a7" secondAttribute="top" id="CRg-Kp-S3K"/>
+                            <constraint firstItem="Via-ed-GSJ" firstAttribute="leading" secondItem="h0E-P7-eA0" secondAttribute="trailing" constant="10" id="FkF-of-Rdj"/>
+                            <constraint firstItem="r8I-nD-pME" firstAttribute="top" secondItem="h0E-P7-eA0" secondAttribute="top" id="HXA-nM-Z2L"/>
+                            <constraint firstItem="h0E-P7-eA0" firstAttribute="leading" secondItem="r8I-nD-pME" secondAttribute="trailing" constant="13" id="JnO-a6-JPc"/>
+                            <constraint firstAttribute="bottom" secondItem="fkb-hH-sHz" secondAttribute="bottom" constant="4" id="Nq2-ed-3p2"/>
+                            <constraint firstItem="r8I-nD-pME" firstAttribute="leading" secondItem="yB1-CN-TfJ" secondAttribute="leading" id="RiL-ge-Ntk"/>
+                            <constraint firstItem="fkb-hH-sHz" firstAttribute="top" secondItem="yB1-CN-TfJ" secondAttribute="bottom" constant="8" symbolic="YES" id="WWj-JH-EsV"/>
+                            <constraint firstItem="yB1-CN-TfJ" firstAttribute="top" secondItem="r8I-nD-pME" secondAttribute="bottom" constant="8" symbolic="YES" id="bph-QL-Enp"/>
+                            <constraint firstItem="Jbr-62-9a7" firstAttribute="trailing" secondItem="fkb-hH-sHz" secondAttribute="trailing" id="dRX-tc-diZ"/>
+                            <constraint firstItem="Jbr-62-9a7" firstAttribute="top" secondItem="Via-ed-GSJ" secondAttribute="bottom" constant="9" id="eF7-Gf-5ce"/>
+                            <constraint firstItem="Via-ed-GSJ" firstAttribute="trailing" secondItem="Jbr-62-9a7" secondAttribute="trailing" id="gXk-Tp-fJb"/>
+                            <constraint firstItem="h0E-P7-eA0" firstAttribute="leading" secondItem="Jbr-62-9a7" secondAttribute="leading" id="h71-iP-GbW"/>
+                            <constraint firstItem="yB1-CN-TfJ" firstAttribute="leading" secondItem="fkb-hH-sHz" secondAttribute="leading" id="oE6-PA-Kar"/>
+                            <constraint firstAttribute="trailing" secondItem="Via-ed-GSJ" secondAttribute="trailing" constant="6" id="pTj-jM-ztu"/>
+                            <constraint firstItem="r8I-nD-pME" firstAttribute="top" secondItem="YGn-Yt-m3H" secondAttribute="topMargin" id="w4w-Lt-d9q"/>
+                            <constraint firstItem="Jbr-62-9a7" firstAttribute="top" secondItem="h0E-P7-eA0" secondAttribute="bottom" constant="8" symbolic="YES" id="x2M-cQ-FMp"/>
+                            <constraint firstItem="fkb-hH-sHz" firstAttribute="top" secondItem="Jbr-62-9a7" secondAttribute="bottom" constant="8" symbolic="YES" id="xba-li-08E"/>
+                            <constraint firstItem="r8I-nD-pME" firstAttribute="leading" secondItem="YGn-Yt-m3H" secondAttribute="leading" constant="13" id="xnK-8z-Jpe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YGn-Yt-m3H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-13" id="7za-FD-RMF"/>
+                    <constraint firstItem="YGn-Yt-m3H" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gSA-bD-YaR"/>
+                    <constraint firstItem="YGn-Yt-m3H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="qd4-mZ-TQx"/>
+                    <constraint firstItem="YGn-Yt-m3H" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yxE-BB-x6N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dueDateLabel" destination="Jbr-62-9a7" id="3EY-nk-eNc"/>
+                <outlet property="priorityIcon" destination="r8I-nD-pME" id="Afc-dg-XNA"/>
+                <outlet property="projectNameLabel" destination="h0E-P7-eA0" id="9Ja-sH-9fP"/>
+            </connections>
+            <point key="canvasLocation" x="-454.39999999999998" y="41.829085457271368"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-clock" width="153.19148254394531" height="153.19148254394531"/>
+        <image name="ic-flag-green" width="153.19148254394531" height="153.19148254394531"/>
+    </resources>
+</document>

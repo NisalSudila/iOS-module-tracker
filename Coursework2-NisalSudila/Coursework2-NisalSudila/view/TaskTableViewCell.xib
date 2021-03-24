@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="TaskTableViewCell" customModule="project_planner_ipad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="648" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="648" height="122.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVN-Dw-FgS">
+                        <rect key="frame" x="46" y="13" width="70" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="8vy-Io-Fu1"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="J3p-CH-5y3"/>
+                            <constraint firstAttribute="height" constant="22" id="wWP-AQ-lud"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy1-o8-USm">
+                        <rect key="frame" x="124" y="13" width="311" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="312" id="GCh-W7-TPE"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="311" id="kxb-p5-MJh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmB-Lm-Yzk">
+                        <rect key="frame" x="46" y="42" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Rte-fA-uIB"/>
+                            <constraint firstAttribute="height" constant="22" id="WEg-eY-frL"/>
+                        </constraints>
+                        <connections>
+                            <action selector="handleViewNotesClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MOF-lL-VfO"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aub-r7-hBM">
+                        <rect key="frame" x="85" y="42" width="389" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="389" id="7ar-8u-7fm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Days Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mv8-5t-DmD">
+                        <rect key="frame" x="46" y="71" width="389" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="389" id="fvd-wx-Snr"/>
+                            <constraint firstAttribute="height" constant="21" id="qmV-ak-UOF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKJ-gr-9b5" customClass="LinearProgressBar" customModule="project_planner_ipad" customModuleProvider="target">
+                        <rect key="frame" x="46" y="89.5" width="428" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="3cb-jb-1dx"/>
+                            <constraint firstAttribute="width" constant="428" id="FDc-NO-cbn"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rke-f4-Z4V" customClass="CircularProgressBar" customModule="project_planner_ipad" customModuleProvider="target">
+                        <rect key="frame" x="509" y="11" width="114" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="114" id="YF9-4Y-pEO"/>
+                            <constraint firstAttribute="height" constant="100" id="ezp-wl-2Wt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rke-f4-Z4V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="17C-ub-RsE"/>
+                    <constraint firstItem="ZVN-Dw-FgS" firstAttribute="leading" secondItem="GmB-Lm-Yzk" secondAttribute="leading" id="3SV-VR-CSu"/>
+                    <constraint firstItem="ZVN-Dw-FgS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="26" id="9vp-9Y-6u0"/>
+                    <constraint firstItem="ZVN-Dw-FgS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="ER4-0J-fLB"/>
+                    <constraint firstItem="Rke-f4-Z4V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Fuc-zC-fC0"/>
+                    <constraint firstItem="aub-r7-hBM" firstAttribute="leading" secondItem="GmB-Lm-Yzk" secondAttribute="trailing" constant="17" id="Gdh-mg-eaL"/>
+                    <constraint firstAttribute="trailing" secondItem="Rke-f4-Z4V" secondAttribute="trailing" constant="20" id="O3S-31-KId"/>
+                    <constraint firstItem="cKJ-gr-9b5" firstAttribute="leading" secondItem="mv8-5t-DmD" secondAttribute="leading" id="Suj-O4-1VI"/>
+                    <constraint firstItem="ZVN-Dw-FgS" firstAttribute="firstBaseline" secondItem="Zy1-o8-USm" secondAttribute="firstBaseline" id="Vfq-7p-V7Y"/>
+                    <constraint firstItem="Zy1-o8-USm" firstAttribute="trailing" secondItem="mv8-5t-DmD" secondAttribute="trailing" id="bj2-4H-9jK"/>
+                    <constraint firstItem="Zy1-o8-USm" firstAttribute="leading" secondItem="ZVN-Dw-FgS" secondAttribute="trailing" constant="8" symbolic="YES" id="cEo-Ui-yXJ"/>
+                    <constraint firstItem="Zy1-o8-USm" firstAttribute="centerX" secondItem="aub-r7-hBM" secondAttribute="centerX" id="cge-4g-3pN"/>
+                    <constraint firstItem="cKJ-gr-9b5" firstAttribute="trailing" secondItem="aub-r7-hBM" secondAttribute="trailing" id="dEa-AJ-tG9"/>
+                    <constraint firstAttribute="bottom" secondItem="Rke-f4-Z4V" secondAttribute="bottom" id="den-Ho-6DR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cKJ-gr-9b5" secondAttribute="bottom" constant="4" id="dtv-dH-L2Z"/>
+                    <constraint firstItem="GmB-Lm-Yzk" firstAttribute="top" secondItem="aub-r7-hBM" secondAttribute="top" id="eIU-qC-RxD"/>
+                    <constraint firstItem="mv8-5t-DmD" firstAttribute="top" secondItem="GmB-Lm-Yzk" secondAttribute="bottom" constant="7" id="hvc-Z4-lQG"/>
+                    <constraint firstItem="Rke-f4-Z4V" firstAttribute="leading" secondItem="aub-r7-hBM" secondAttribute="trailing" constant="35" id="j0E-Om-fRP"/>
+                    <constraint firstItem="cKJ-gr-9b5" firstAttribute="top" secondItem="mv8-5t-DmD" secondAttribute="bottom" constant="4" id="pOT-QV-idA"/>
+                    <constraint firstItem="aub-r7-hBM" firstAttribute="leading" secondItem="GmB-Lm-Yzk" secondAttribute="trailing" constant="17" id="sZG-k0-R1M"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Rke-f4-Z4V" secondAttribute="trailing" constant="5" id="vTh-Cv-VvX"/>
+                    <constraint firstItem="ZVN-Dw-FgS" firstAttribute="baseline" secondItem="Zy1-o8-USm" secondAttribute="baseline" id="vfS-sN-eVS"/>
+                    <constraint firstItem="GmB-Lm-Yzk" firstAttribute="leading" secondItem="mv8-5t-DmD" secondAttribute="leading" id="zLL-9n-Za1"/>
+                    <constraint firstItem="GmB-Lm-Yzk" firstAttribute="top" secondItem="ZVN-Dw-FgS" secondAttribute="bottom" constant="7" id="zuJ-bc-Adg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="daysLeftLabel" destination="mv8-5t-DmD" id="uUq-ND-rQC"/>
+                <outlet property="daysRemainingProgressBar" destination="cKJ-gr-9b5" id="1Z1-v3-R9u"/>
+                <outlet property="dueDateLabel" destination="aub-r7-hBM" id="ieS-bl-Hf4"/>
+                <outlet property="taskNameLabel" destination="Zy1-o8-USm" id="EY2-I9-lZG"/>
+                <outlet property="taskNoLabel" destination="ZVN-Dw-FgS" id="bMO-zJ-nkv"/>
+                <outlet property="taskProgressBar" destination="Rke-f4-Z4V" id="jic-zM-3OW"/>
+            </connections>
+            <point key="canvasLocation" x="97.599999999999994" y="163.26836581709148"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4A8ECF3246C25820054FB38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ECF2246C25820054FB38 /* AppDelegate.swift */; };
+		A4A8ECF6246C25820054FB38 /* Coursework2_NisalSudila.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ECF4246C25820054FB38 /* Coursework2_NisalSudila.xcdatamodeld */; };
+		A4A8ECF8246C25820054FB38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ECF7246C25820054FB38 /* SceneDelegate.swift */; };
+		A4A8ECFA246C25820054FB38 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ECF9246C25820054FB38 /* MasterViewController.swift */; };
+		A4A8ECFC246C25820054FB38 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ECFB246C25820054FB38 /* DetailViewController.swift */; };
+		A4A8ECFF246C25820054FB38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A8ECFD246C25820054FB38 /* Main.storyboard */; };
+		A4A8ED01246C258C0054FB38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A8ED00246C258C0054FB38 /* Assets.xcassets */; };
+		A4A8ED04246C258C0054FB38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A8ED02246C258C0054FB38 /* LaunchScreen.storyboard */; };
+		A4A8ED0D246C36990054FB38 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED0C246C36990054FB38 /* AddProjectViewController.swift */; };
+		A4A8ED0F246C371D0054FB38 /* PrioritySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED0E246C371D0054FB38 /* PrioritySelectionViewController.swift */; };
+		A4A8ED11246C37560054FB38 /* NotesPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED10246C37560054FB38 /* NotesPopoverController.swift */; };
+		A4A8ED13246C38A40054FB38 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED12246C38A40054FB38 /* AddTaskViewController.swift */; };
+		A4A8ED24246C43160054FB38 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED1E246C43160054FB38 /* ProjectTableViewCell.swift */; };
+		A4A8ED25246C43160054FB38 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED1F246C43160054FB38 /* CircularProgressBar.swift */; };
+		A4A8ED26246C43160054FB38 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED20246C43160054FB38 /* TaskTableViewCell.swift */; };
+		A4A8ED27246C43160054FB38 /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED21246C43160054FB38 /* LinearProgressBar.swift */; };
+		A4A8ED28246C43160054FB38 /* ProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A8ED22246C43160054FB38 /* ProjectTableViewCell.xib */; };
+		A4A8ED29246C43160054FB38 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A8ED23246C43160054FB38 /* TaskTableViewCell.xib */; };
+		A4A8ED2C246C462A0054FB38 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED2B246C462A0054FB38 /* Formatter.swift */; };
+		A4A8ED2E246C46410054FB38 /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED2D246C46410054FB38 /* Calculations.swift */; };
+		A4A8ED30246C46690054FB38 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED2F246C46690054FB38 /* Colours.swift */; };
+		A4A8ED3B246D948F0054FB38 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED3A246D948F0054FB38 /* UITableView.swift */; };
+		A4A8ED48246DCCFF0054FB38 /* Project+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED44246DCCFF0054FB38 /* Project+CoreDataClass.swift */; };
+		A4A8ED49246DCCFF0054FB38 /* Project+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED45246DCCFF0054FB38 /* Project+CoreDataProperties.swift */; };
+		A4A8ED4A246DCCFF0054FB38 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED46246DCCFF0054FB38 /* Task+CoreDataClass.swift */; };
+		A4A8ED4B246DCCFF0054FB38 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8ED47246DCCFF0054FB38 /* Task+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4A8ECEF246C25820054FB38 /* Coursework2-NisalSudila.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coursework2-NisalSudila.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A8ECF2246C25820054FB38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4A8ECF5246C25820054FB38 /* Coursework2_NisalSudila.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coursework2_NisalSudila.xcdatamodel; sourceTree = "<group>"; };
+		A4A8ECF7246C25820054FB38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A4A8ECF9246C25820054FB38 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		A4A8ECFB246C25820054FB38 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A4A8ECFE246C25820054FB38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4A8ED00246C258C0054FB38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4A8ED03246C258C0054FB38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4A8ED05246C258C0054FB38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A8ED0C246C36990054FB38 /* AddProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
+		A4A8ED0E246C371D0054FB38 /* PrioritySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrioritySelectionViewController.swift; sourceTree = "<group>"; };
+		A4A8ED10246C37560054FB38 /* NotesPopoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesPopoverController.swift; sourceTree = "<group>"; };
+		A4A8ED12246C38A40054FB38 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		A4A8ED1E246C43160054FB38 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		A4A8ED1F246C43160054FB38 /* CircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		A4A8ED20246C43160054FB38 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		A4A8ED21246C43160054FB38 /* LinearProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
+		A4A8ED22246C43160054FB38 /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
+		A4A8ED23246C43160054FB38 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		A4A8ED2B246C462A0054FB38 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		A4A8ED2D246C46410054FB38 /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
+		A4A8ED2F246C46690054FB38 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		A4A8ED3A246D948F0054FB38 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		A4A8ED44246DCCFF0054FB38 /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4A8ED45246DCCFF0054FB38 /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A4A8ED46246DCCFF0054FB38 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4A8ED47246DCCFF0054FB38 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4A8ECEC246C25820054FB38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4A8ECE6246C25820054FB38 = {
+			isa = PBXGroup;
+			children = (
+				A4A8ECF1246C25820054FB38 /* Coursework2-NisalSudila */,
+				A4A8ECF0246C25820054FB38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4A8ECF0246C25820054FB38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4A8ECEF246C25820054FB38 /* Coursework2-NisalSudila.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4A8ECF1246C25820054FB38 /* Coursework2-NisalSudila */ = {
+			isa = PBXGroup;
+			children = (
+				A4A8ED39246D94680054FB38 /* Extensions */,
+				A4A8ED2A246C46050054FB38 /* helper */,
+				A4A8ED1D246C42C20054FB38 /* view */,
+				A4A8ED14246C3FED0054FB38 /* Model */,
+				A4A8ED0B246C33E50054FB38 /* Controller */,
+				A4A8ECF2246C25820054FB38 /* AppDelegate.swift */,
+				A4A8ECF7246C25820054FB38 /* SceneDelegate.swift */,
+				A4A8ECF9246C25820054FB38 /* MasterViewController.swift */,
+				A4A8ECFB246C25820054FB38 /* DetailViewController.swift */,
+				A4A8ECFD246C25820054FB38 /* Main.storyboard */,
+				A4A8ED00246C258C0054FB38 /* Assets.xcassets */,
+				A4A8ED02246C258C0054FB38 /* LaunchScreen.storyboard */,
+				A4A8ED05246C258C0054FB38 /* Info.plist */,
+				A4A8ECF4246C25820054FB38 /* Coursework2_NisalSudila.xcdatamodeld */,
+			);
+			path = "Coursework2-NisalSudila";
+			sourceTree = "<group>";
+		};
+		A4A8ED0B246C33E50054FB38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4A8ED0C246C36990054FB38 /* AddProjectViewController.swift */,
+				A4A8ED0E246C371D0054FB38 /* PrioritySelectionViewController.swift */,
+				A4A8ED10246C37560054FB38 /* NotesPopoverController.swift */,
+				A4A8ED12246C38A40054FB38 /* AddTaskViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A4A8ED14246C3FED0054FB38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4A8ED44246DCCFF0054FB38 /* Project+CoreDataClass.swift */,
+				A4A8ED45246DCCFF0054FB38 /* Project+CoreDataProperties.swift */,
+				A4A8ED46246DCCFF0054FB38 /* Task+CoreDataClass.swift */,
+				A4A8ED47246DCCFF0054FB38 /* Task+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4A8ED1D246C42C20054FB38 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A4A8ED1F246C43160054FB38 /* CircularProgressBar.swift */,
+				A4A8ED21246C43160054FB38 /* LinearProgressBar.swift */,
+				A4A8ED1E246C43160054FB38 /* ProjectTableViewCell.swift */,
+				A4A8ED22246C43160054FB38 /* ProjectTableViewCell.xib */,
+				A4A8ED20246C43160054FB38 /* TaskTableViewCell.swift */,
+				A4A8ED23246C43160054FB38 /* TaskTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A4A8ED2A246C46050054FB38 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				A4A8ED2B246C462A0054FB38 /* Formatter.swift */,
+				A4A8ED2D246C46410054FB38 /* Calculations.swift */,
+				A4A8ED2F246C46690054FB38 /* Colours.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		A4A8ED39246D94680054FB38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4A8ED3A246D948F0054FB38 /* UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4A8ECEE246C25820054FB38 /* Coursework2-NisalSudila */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A8ED08246C258C0054FB38 /* Build configuration list for PBXNativeTarget "Coursework2-NisalSudila" */;
+			buildPhases = (
+				A4A8ECEB246C25820054FB38 /* Sources */,
+				A4A8ECEC246C25820054FB38 /* Frameworks */,
+				A4A8ECED246C25820054FB38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coursework2-NisalSudila";
+			productName = "Coursework2-NisalSudila";
+			productReference = A4A8ECEF246C25820054FB38 /* Coursework2-NisalSudila.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4A8ECE7246C25820054FB38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nisal Sudila";
+				TargetAttributes = {
+					A4A8ECEE246C25820054FB38 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A4A8ECEA246C25820054FB38 /* Build configuration list for PBXProject "Coursework2-NisalSudila" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4A8ECE6246C25820054FB38;
+			productRefGroup = A4A8ECF0246C25820054FB38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4A8ECEE246C25820054FB38 /* Coursework2-NisalSudila */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4A8ECED246C25820054FB38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A8ED04246C258C0054FB38 /* LaunchScreen.storyboard in Resources */,
+				A4A8ED01246C258C0054FB38 /* Assets.xcassets in Resources */,
+				A4A8ECFF246C25820054FB38 /* Main.storyboard in Resources */,
+				A4A8ED28246C43160054FB38 /* ProjectTableViewCell.xib in Resources */,
+				A4A8ED29246C43160054FB38 /* TaskTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4A8ECEB246C25820054FB38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A8ED0D246C36990054FB38 /* AddProjectViewController.swift in Sources */,
+				A4A8ED24246C43160054FB38 /* ProjectTableViewCell.swift in Sources */,
+				A4A8ECFA246C25820054FB38 /* MasterViewController.swift in Sources */,
+				A4A8ED49246DCCFF0054FB38 /* Project+CoreDataProperties.swift in Sources */,
+				A4A8ED4B246DCCFF0054FB38 /* Task+CoreDataProperties.swift in Sources */,
+				A4A8ED48246DCCFF0054FB38 /* Project+CoreDataClass.swift in Sources */,
+				A4A8ED0F246C371D0054FB38 /* PrioritySelectionViewController.swift in Sources */,
+				A4A8ED4A246DCCFF0054FB38 /* Task+CoreDataClass.swift in Sources */,
+				A4A8ECF6246C25820054FB38 /* Coursework2_NisalSudila.xcdatamodeld in Sources */,
+				A4A8ECFC246C25820054FB38 /* DetailViewController.swift in Sources */,
+				A4A8ECF3246C25820054FB38 /* AppDelegate.swift in Sources */,
+				A4A8ECF8246C25820054FB38 /* SceneDelegate.swift in Sources */,
+				A4A8ED26246C43160054FB38 /* TaskTableViewCell.swift in Sources */,
+				A4A8ED27246C43160054FB38 /* LinearProgressBar.swift in Sources */,
+				A4A8ED2C246C462A0054FB38 /* Formatter.swift in Sources */,
+				A4A8ED13246C38A40054FB38 /* AddTaskViewController.swift in Sources */,
+				A4A8ED11246C37560054FB38 /* NotesPopoverController.swift in Sources */,
+				A4A8ED2E246C46410054FB38 /* Calculations.swift in Sources */,
+				A4A8ED25246C43160054FB38 /* CircularProgressBar.swift in Sources */,
+				A4A8ED30246C46690054FB38 /* Colours.swift in Sources */,
+				A4A8ED3B246D948F0054FB38 /* UITableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4A8ECFD246C25820054FB38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A8ECFE246C25820054FB38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4A8ED02246C258C0054FB38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A8ED03246C258C0054FB38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4A8ED06246C258C0054FB38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4A8ED07246C258C0054FB38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4A8ED09246C258C0054FB38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coursework2-NisalSudila/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nisal.Coursework2-NisalSudila";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A4A8ED0A246C258C0054FB38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Coursework2-NisalSudila/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nisal.Coursework2-NisalSudila";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4A8ECEA246C25820054FB38 /* Build configuration list for PBXProject "Coursework2-NisalSudila" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A8ED06246C258C0054FB38 /* Debug */,
+				A4A8ED07246C258C0054FB38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A8ED08246C258C0054FB38 /* Build configuration list for PBXNativeTarget "Coursework2-NisalSudila" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A8ED09246C258C0054FB38 /* Debug */,
+				A4A8ED0A246C258C0054FB38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A4A8ECF4246C25820054FB38 /* Coursework2_NisalSudila.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A4A8ECF5246C25820054FB38 /* Coursework2_NisalSudila.xcdatamodel */,
+			);
+			currentVersion = A4A8ECF5246C25820054FB38 /* Coursework2_NisalSudila.xcdatamodel */;
+			path = Coursework2_NisalSudila.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A4A8ECE7246C25820054FB38 /* Project object */;
+}
